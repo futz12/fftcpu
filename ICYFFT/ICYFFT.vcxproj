@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{d235e745-a246-4b48-b56b-1f86fbee23f6}</ProjectGuid>
-    <RootNamespace>fftcpu</RootNamespace>
+    <ProjectGuid>{b50ddd87-016f-4bbe-b312-184c3f6cc8f1}</ProjectGuid>
+    <RootNamespace>ICYFFT</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,6 +118,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,11 +129,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="fftcpu.cpp" />
-    <ClCompile Include="simplefft.cpp" />
+    <ClCompile Include="ICYFFT.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="simplefft.h" />
+    <ClInclude Include="FFT.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

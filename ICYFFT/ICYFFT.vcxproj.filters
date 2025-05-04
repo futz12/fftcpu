@@ -15,15 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="fftcpu.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="simplefft.cpp">
+    <ClCompile Include="ICYFFT.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="simplefft.h">
+    <ClInclude Include="FFT.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
